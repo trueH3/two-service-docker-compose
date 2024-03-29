@@ -11,8 +11,13 @@
 	<groupId>com.example</groupId>
 	<artifactId>two-service-docker-compose</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>two-service-docker-compose</name>
 	<description>Demo project for Spring Boot</description>
+	<modules>
+		<module>proxy-service</module>
+		<module>internal-service</module>
+	</modules>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
