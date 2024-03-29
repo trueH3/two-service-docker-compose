@@ -1,3 +1,8 @@
+#INTERNAL_SERVICE_CONTAINER_NAME comes from .env file. This is the way to define variables inside docker compose file.
+#I wanted to parametrize it because docker compose creates for me network and he is putting all services inside of it
+#once all services are inside one network they can communicate with each other. to do so as a host i need to pass
+# container name of given service
+
 services:
   proxy-service:
     container_name: proxy-service-container
